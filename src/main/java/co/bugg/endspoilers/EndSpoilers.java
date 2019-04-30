@@ -1,11 +1,11 @@
 package co.bugg.endspoilers;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.event.HoverEvent;
-import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.ChatStyle;
-import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.IChatComponent;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.Style;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraft.util.text.event.HoverEvent;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -39,15 +39,15 @@ public class EndSpoilers {
 
     @SubscribeEvent
     public void onChat(ClientChatReceivedEvent event) {
-        if(reg.matcher(event.message.getUnformattedText()).find()) {
+        if(reg.matcher(event.getMessage().getUnformattedText()).find()) {
             event.setCanceled(true);
 
-            ChatStyle style = new ChatStyle().setColor(EnumChatFormatting.RED).setChatHoverEvent(
-                    new HoverEvent(HoverEvent.Action.SHOW_TEXT, event.message));
-            IChatComponent newMessage = new ChatComponentText("Potential Avengers: Endgame spoiler blocked! Hover over " +
-                    "this message to view the blocked message.").setChatStyle(style);
+            Style style = new Style().setColor(TextFormatting.RED).setHoverEvent(
+                    new HoverEvent(HoverEvent.Action.SHOW_TEXT, event.getMessage()));
+            ITextComponent newMessage = new TextComponentString("Potential Avengers: Endgame spoiler blocked! Hover over " +
+                    "this message to view the blocked message.").setStyle(style);
 
-            Minecraft.getMinecraft().thePlayer.addChatMessage(newMessage);
+            Minecraft.getMinecraft().player.sendMessage(newMessage);
         }
     }
 }
