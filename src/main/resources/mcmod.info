@@ -1,0 +1,13 @@
+[
+{
+  "modid": "endspoilers",
+  "name": "Endspoilers",
+  "description": "Chat filter for some of Avengers: Endgame's spoilers.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["bugfroggy"],
+  "logoFile": ""
+}
+]
