@@ -22,7 +22,7 @@ public class EndSpoilers {
             "time ?travel|end[ \\-]?game|avenge|peter parker|spider[ \\-]?man|loki|clint|jeremy renner|RDJ|" +
             "robert (?:downey|jr)|(?:doctor|dr)\\.? ?strange|benedict|cumberbatch|ant[ \\-]?man|paul rudd|pepper|potts|" +
             "mr?s\\.? ? pott?s?|gwenyth paltrow|star[ \\-]?lord|chris pratt|scarlett?|johans?son|josh brolin|" +
-            "hemsworth|brie larson|carol denvers|dies in|infinity|gauntlet|tom holland|marvel|tom hiddleston|" +
+            "hemsworth|brie larson|carol denvers|dies in|infinity|gauntlet|tom holland|marvel|tom hiddleston|groot|" +
             "nebula|karen gillan|war ?machine|don cheadle|bucky|barnes|sebastian stan|ancient one|tilda swinton|" +
             "sam wilson|falcon|okokye|danai gurira|wasp|rocket|raccoon|pym|stones|quill|hawkeye|snap|natasha|" +
             "hammer|(?:5|five) years|back in time|nick fury|samuel ?(l?\\.?)? ?jackson|chop.*head|quantum|stark|" +
