@@ -1,5 +1,2 @@
-# Endspoilers
-Block Avengers: Endgame spoilers in Minecraft
-
-## WARNING
+# Warning
 This repository contains some spoilers for the movie Avengers: Endgame. Proceed with caution.
